@@ -1,0 +1,22 @@
+string = "Today is Sunday"
+pattern = "day" 
+Output 
+	day find at position 2, 12
+
+
+
+
+TEST CASES:
+dash: 5: TEST: not found
+i = 0, pattern[0] = 'd',str[i] = 'T'
+dash: 6: i: not found
+i = 1, pattern[0] = 'd',str[i] = 'o' 
+i = 1, pattern[0] = 'd',str[i] = 'o' 
+dash: 7: i: not found
+
+i = 2, pattern[0] = 'd',str[i] = 'd' 
+dash: 8: i: not found
+    j = [2 - 5]
+    j=2, pattern[j-i]=pattern[0]='d' ,str[j] = str[2] = 'd', status=true
+    j=3, pattern[j-i]=pattern[1]='a' ,str[j] = str[3] = 'a', status=true
+    j=4, pattern[j-i]=pattern[1]='a' ,str[j] = str[3] = 'a', status=true

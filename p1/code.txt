@@ -1,0 +1,39 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        string str = "Today is Sunday",
+                pattern = "dy";
+                int count1=0,count2=0;
+        bool status=true;
+        for(int i = 0; i < str.Length; i++){
+            if(pattern[0] == str[i]){
+                status =true;
+                count1++;
+                for(int j=i; j <= (i+pattern.Length-1); j++){
+                    if(j<=str.Length-1){
+                    if(pattern[j-i] != str[j]){
+                      status=false;
+                      count2++;
+                      break;
+                    }
+                  }else{
+                      status = false;
+                  }
+                }
+                if(status){
+                   Console.WriteLine (pattern + " find at positon "+i+"\n");
+                }
+            }
+        }
+        if(count1==count2){
+            Console.WriteLine(pattern+" Not found!");
+        }
+        // Console.WriteLine (positions);
+    }
+}
